@@ -1,0 +1,737 @@
+@charset "utf-8";
+
+// ======================================================================
+//
+// 【ファイル名】 main.v01.scss
+//
+// 【このファイルについて】
+//  - このファイルはtemplate_pc用のサンプルscssです。
+//    各日本語テキストについては、作業完了後削除するか正しい内容に変更してください。
+//
+// 【もくじ】
+//  - sprite設定
+//  - include設定
+//  - style
+//    ├ body               - 簡単な説明を書いてください
+//    ├ #contentsArea      - 簡単な説明を書いてください
+//    └ ・・・       　    - 簡単な説明を書いてください
+//
+// ======================================================================
+
+// REQUIRE
+$css_init : true;
+@import "_core/_core.scss";
+
+
+// ----------------------------------------------------------------------
+// sprite設定
+// ----------------------------------------------------------------------
+
+// 記述例
+$spr: sprite-map("spr/*.png");
+$spr_img: sprite-url($spr);
+
+
+// ----------------------------------------------------------------------
+// include設定
+// ----------------------------------------------------------------------
+
+// 記述例
+// @import "_project/_mixin.scss";
+
+
+// ----------------------------------------------------------------------
+// style ※各styleの記述サンプルです。 適宜変更してください。
+// ----------------------------------------------------------------------
+
+/* 共通サンプル */
+.contentsArea {
+  background: image-url('../img/bg_anniversary1.jpg') no-repeat center top,
+    image-url('../img/bg_anniversary2.jpg') no-repeat center 801px,
+    image-url('../img/bg_anniversary3.jpg') no-repeat center 1627px,
+    image-url('../img/bg_anniversary4.jpg') no-repeat center 2520px,
+    image-url('../img/bg_anniversary5.jpg') no-repeat center 3431px;
+
+  .font-none {
+    font-size: 0;
+    color: transparent;
+  }
+
+  .anniversary {
+    width: 960px;
+    position: relative;
+    min-width: 960px;
+    margin: 0 auto;
+
+    .anniversary_title {
+      position: relative;
+      height: 816px;
+      text-align: center;
+
+      .title_img {
+        // position: absolute;
+        // top: 0;
+        // left: -80px;
+        width: 863px;
+        height: 428px;
+        margin: 0 auto;
+      }
+
+      .a_19th {
+        position: absolute;
+        display: block;
+        top: 8px;
+        left: 6px;
+        width: 99px;
+        height: 131px;
+        background: image-url('../img/a_19th.png') no-repeat center top;
+        z-index: 2;
+      }
+
+      .text-handbills {
+        position: absolute;
+        display: block;
+        top: 40px;
+        left: 153px;
+        width: 647px;
+        height: 23px;
+        background: image-url('../img/text-handbills.png') no-repeat center top;
+        z-index: 2;
+      }
+
+      .text-event {
+        position: absolute;
+        display: block;
+        bottom: 242px;
+        left: 250px;
+        width: 458px;
+        height: 107px;
+        background: image-url('../img/text-event.png') no-repeat center top;
+        z-index: 3;
+      }
+
+      .btn-join-off {
+        position: absolute;
+        width: 414px;
+        height: 121px;
+        bottom: 107px;
+        left: 272px;
+        background-color: transparent;
+        display: block;
+        @include img-replacement-sprite($spr, $spr_img, btn-join-off);
+
+        &:hover {
+          @include img-replacement-sprite($spr, $spr_img, btn-join-on);
+        }
+      }
+
+      .btn-join-ing {
+        position: absolute;
+        width: 414px;
+        height: 121px;
+        bottom: 107px;
+        left: 272px;
+        display: block;
+        background-color: transparent;
+        @include img-replacement-sprite($spr, $spr_img, btn-join-ing);
+      }
+
+      .btn-join-end {
+        position: absolute;
+        width: 414px;
+        height: 121px;
+        bottom: 107px;
+        left: 272px;
+        display: block;
+        background-color: transparent;
+        @include img-replacement-sprite($spr, $spr_img, btn-join-end);
+      }
+
+      .text-received {
+        position: absolute;
+        display: block;
+        bottom: 30px;
+        left: 190px;
+        width: 591px;
+        height: 43px;
+        background: image-url('../img/text-received.png') no-repeat center top;
+        z-index: 2;
+      }
+    }
+
+    .bg_prize {
+      position: relative;
+      width: 969px;
+      height: 1470px;
+      padding-top: 70px;
+      background: image-url('../img/bg_prize.png') no-repeat center top;
+      z-index: 3;
+      font-size: 0;
+
+      .event_one{
+        margin: 0 auto;
+        width: 407px;
+        height: 106px;
+        background: image-url('../img/hankyu_gift1.png') no-repeat center top;
+      }
+
+      .text-hancon {
+        margin: 30px auto 0px;
+        width: 541px;
+        height: 42px;
+        background: image-url('../img/text-hancon.png') no-repeat center top;
+      }
+
+      .stage_mission {
+        height: 714px;
+        width: 900px;
+        margin-bottom: 8px;
+
+        .stage_title {
+          display: inline-block;
+          position: relative;
+          width: 310px;
+          height: 693px;
+          left: 0px;
+          top: 26px;
+          vertical-align: top;
+
+          li {
+            position: relative;
+            width: 309px;
+            height: 148px;
+            margin: 10px 0px 0px 0px;
+          }
+
+          a {
+            position: relative;
+            display: block;
+            width: 309px;
+            height: 148px;
+          }
+
+          li:nth-child(1) {
+            margin: 36px 0px 0px;
+          }
+
+          li:nth-child(3) {
+            margin: 7px 0px 0px 0px;
+          }
+        }
+
+        .one_stage {
+          display: inline-block;
+          position: relative;
+          width: 290px;
+          height: 693px;
+          left: 0px;
+          top: 26px;
+          vertical-align: top;
+        }
+
+        .panzi::before {
+          content: '';
+          position: absolute;
+          width: 203px;
+          height: 134px;
+          top: 25px;
+          left: 35px;
+          background: image-url('../img/panzi.png') no-repeat center top;
+        }
+
+        li {
+          position: relative;
+          width: 268px;
+          height: 158px;
+          margin: 0 auto;
+
+          .stage_text {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            height: 45px;
+            width: 268px;
+            padding: 28px 40px 20px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            line-height: 23px;
+          }
+
+          .stage_num {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700;
+            height: 32px;
+            width: 268px;
+            text-align: center;
+          }
+        }
+
+
+        li:nth-child(1) {
+          margin: 32px 10px 0px;
+
+          .stage_text {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            height: 45px;
+            width: 268px;
+            padding: 40px 40px 10px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            line-height: 23px;
+          }
+
+          .stage_num {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700;
+            height: 32px;
+            width: 268px;
+            text-align: center;
+          }
+        }
+
+        li:nth-child(2) {
+          position: relative;
+          width: 268px;
+          height: 158px;
+          margin: 0 auto;
+
+          .stage_text {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            height: 45px;
+            width: 268px;
+            padding: 28px 40px 20px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            line-height: 23px;
+          }
+
+          .stage_num {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700;
+            height: 32px;
+            width: 268px;
+            text-align: center;
+          }
+        }
+
+        li:nth-child(3) {
+          position: relative;
+          width: 268px;
+          height: 158px;
+          margin: 0 auto;
+
+          .stage_text {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            height: 45px;
+            width: 268px;
+            padding: 33px 40px 16px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            line-height: 23px;
+          }
+
+          .stage_num {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700;
+            height: 32px;
+            width: 268px;
+            text-align: center;
+          }
+        }
+
+        li:nth-child(4) {
+          position: relative;
+          width: 268px;
+          height: 158px;
+          margin: 0 auto;
+
+          .stage_text {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            height: 45px;
+            width: 268px;
+            padding: 32px 40px 17px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            line-height: 23px;
+          }
+
+          .stage_num {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700;
+            height: 32px;
+            width: 268px;
+            text-align: center;
+          }
+        }
+
+
+
+        .two_stage {
+          display: inline-block;
+          position: relative;
+          width: 290px;
+          height: 693px;
+          left: 0px;
+          top: 26px;
+          vertical-align: top;
+
+          li {
+            .stage_text {
+              color: #fffeb3;
+            }
+          }
+        }
+      }
+
+      .count {
+        font-size: 12px;
+        color: #000;
+        margin-top: 35px;
+        margin-left: 310px;
+        text-align: center;
+        width: 580px;
+      }
+
+      .clear {
+        padding-top: 130px;
+        padding-left: 90px;
+        padding-right: 128px;
+        font-size: 0;
+
+        .title_clear {
+          text-align: center;
+          width: 362px;
+          display: inline-block;
+          vertical-align: top;
+
+          .text-avatar {
+            width: 347px;
+            height: 27px;
+            margin: 0 auto;
+            background: image-url('../img/text-avatar.png') no-repeat center top;
+          }
+
+          .img-remuneration1 {
+            width: 116px;
+            height: 136px;
+            margin: 46px auto 0;
+            background: image-url('../img/img-remuneration1.png') no-repeat center top;
+
+            img {
+              width: 110px;
+              height: 130px;
+              margin: 3px 3px;
+            }
+          }
+
+          .recive_off {
+            margin: 31px auto 0;
+            width: 104px;
+            height: 26px;
+            display: block;
+            @include img-replacement-sprite($spr, $spr_img, recive_off);
+
+            &:hover {
+              @include img-replacement-sprite($spr, $spr_img, recive_on);
+            }
+          }
+
+          .recive_grey {
+            margin: 31px auto 0;
+            width: 104px;
+            height: 26px;
+            @include img-replacement-sprite($spr, $spr_img, recive_grey);
+          }
+        }
+
+        .all_clear {
+          width: 382px;
+          text-align: center;
+          display: inline-block;
+          vertical-align: top;
+
+          .text-apply {
+            width: 197px;
+            height: 27px;
+            margin: 0 auto;
+            background: image-url('../img/text-apply.png') no-repeat center top;
+          }
+
+          .two_prize {
+            height: 212px;
+            position: relative;
+
+            .prize_left {
+              width: 91px;
+              height: 105px;
+              background: image-url('../img/predecessors.png') no-repeat center top;
+            }
+
+            .three_card {
+              position: absolute;
+              width: 164px;
+              height: 143px;
+              top: 32px;
+              left: 19px;
+              background: image-url('../img/img-remuneration2.png') no-repeat center top;
+            }
+
+            .prize_right {
+              width: 85px;
+              height: 110px;
+              position: absolute;
+              right: 0;
+              top: 10px;
+            }
+
+            .lottery {
+              background: image-url('../img/lottery.png') no-repeat center top;
+            }
+
+            .one_card {
+              position: absolute;
+              width: 104px;
+              height: 57px;
+              top: 82px;
+              right: 41px;
+              background: image-url('../img/img-remuneration3.png') no-repeat center top;
+            }
+          }
+
+          .prize_introduction {
+            width: 280px;
+            height: 61px;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #fff;
+            line-height: 16px;
+          }
+
+          .btn_apply {
+            margin: 21px auto;
+            width: 170px;
+            height: 48px;
+            display: block;
+            @include img-replacement-sprite($spr, $spr_img, enlist_off);
+
+            &:hover {
+              @include img-replacement-sprite($spr, $spr_img, enlist_on);
+            }
+          }
+
+          .btn_apply_grey {
+            margin: 0px auto;
+            width: 170px;
+            height: 48px;
+            @include img-replacement-sprite($spr, $spr_img, enlist_grey);
+          }
+        }
+      }
+    }
+
+    .gift_content {
+      margin-top: 74px;
+      width: 100%;
+      text-align: center;
+
+      .hankyu_gift {
+        width: 676px;
+        height: 115px;
+        margin: 0 auto;
+        background: image-url('../img/hankyu_gift.png') no-repeat center top;
+      }
+
+      .text_during_event {
+        width: 495px;
+        height: 49px;
+        margin: 38px auto 0px;
+        background: image-url('../img/text_during_event.png') no-repeat center top;
+      }
+
+      .event_subject {
+        font-size: 16px;
+        color: #6b3907;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+      }
+
+      .event_title {
+        width: 808px;
+        height: 174px;
+        margin: 33px auto 0px;
+        background: image-url('../img/event_title.png') no-repeat center top;
+      }
+
+      .yen_3000 {
+        width: 521px;
+        height: 83px;
+        margin: 68px auto 0px;
+        position: relative;
+        background: image-url('../img/yen_3000.png') no-repeat center top;
+      }
+
+      .yen_3000::before {
+        position: absolute;
+        content: '';
+        width: 123px;
+        height: 123px;
+        top: -23px;
+        left: -156px;
+        background: image-url('../img/privilege1.png') no-repeat center top;
+      }
+
+      .yen_3000::after {
+        position: absolute;
+        content: '';
+        width: 179px;
+        height: 168px;
+        top: -41px;
+        right: -186px;
+        background: image-url('../img/cash_coupon3.png') no-repeat center top;
+      }
+
+      .check_passbooks {
+        background-color: transparent;
+        width: 414px;
+        height: 121px;
+        margin: 45px auto 0px;
+        display: block;
+        background-color: transparent;
+        @include img-replacement-sprite($spr, $spr_img, check_passbooks);
+
+        &:hover {
+          @include img-replacement-sprite($spr, $spr_img, check_passbooks_on);
+        }
+      }
+
+      .double_chance {
+        width: 498px;
+        height: 84px;
+        margin: 88px auto 0px;
+        position: relative;
+        background: image-url('../img/double_chance.png') no-repeat center top;
+      }
+
+      .double_chance::before {
+        position: absolute;
+        content: '';
+        width: 123px;
+        height: 123px;
+        top: -13px;
+        left: -156px;
+        background: image-url('../img/privilege2.png') no-repeat center top;
+      }
+
+      .double_chance::after {
+        position: absolute;
+        content: '';
+        width: 212px;
+        height: 207px;
+        top: -62px;
+        right: -230px;
+        background: image-url('../img/cash_coupon1.png') no-repeat center top;
+      }
+
+      .among_customers {
+        width: 779px;
+        height: 63px;
+        margin: 39px auto 0px;
+        background: image-url('../img/among_customers.png') no-repeat center top;
+      }
+    }
+
+    .footer_text {
+      margin-top: 254px;
+      font-size: 12px;
+      color: #fff;
+      line-height: 21px;
+      padding-bottom: 94px;
+
+      li {
+        text-indent: -12px;
+        padding-left: 12px;
+      }
+
+      .event2 {
+        margin-top: 42px;
+      }
+    }
+  }
+
+  .menu_content {
+    position: fixed;
+    width: 180px;
+    height: 513px;
+    z-index: 1000;
+    right: 30px;
+    top: 190px;
+    display: none;
+
+    li {
+      z-index: 1000;
+      opacity: 1;
+      margin: 0px auto;
+
+      a {
+        display: block;
+      }
+    }
+
+    .menu_one {
+      background: image-url('../img/btn_menu_1.png') no-repeat center top;
+
+      a {
+        width: 177px;
+        height: 166px;
+      }
+    }
+
+    .menu_two {
+      background: image-url('../img/btn_menu_2.png') no-repeat center top;
+
+      a {
+        width: 209px;
+        border-radius: 40%;
+        height: 182px;
+      }
+    }
+
+    .menu_top {
+      background: image-url('../img/btn_top.png') no-repeat center top;
+      margin: 32px auto 0px;
+
+      a {
+        width: 144px;
+        height: 146px;
+      }
+    }
+  }
+
+}
+
+/* 以下は必要に応じて
+header, footer, section, h1, h2, h3, h4, h5, h6, div, p, th, td, dl, dt, dd, ul, ol, li, a, span {
+  box-sizing: border-box;
+}
+
+a:focus, *:focus { outline:none; }
+*/

@@ -1,0 +1,945 @@
+@charset "UTF-8";
+/*----------------------------------------
+ 1. リセットcssを指定
+----------------------------------------*/
+/*----------------------------------------
+ RESET for NHN 
+----------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000321}}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: transparent;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000342}}
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000347}}
+body {
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000352}}
+ul, ol, li {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000356}}
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000360}}
+img {
+  vertical-align: bottom;
+  line-height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000365}}
+label {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000369}}
+del {
+  text-decoration: line-through;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000373}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000377}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000383}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------------------------------------
+ 2. Style設定
+----------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000345}}
+body {
+  color: #666;
+  font-size: 12px;
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  line-height: 1.333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000352}}
+a:link {
+  color: #676767;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000353}}
+a:visited {
+  color: #676767;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000354}}
+a:hover {
+  color: #676767;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000355}}
+a:active {
+  color: #676767;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000358}}
+html {
+  overflow-y: scroll;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000362}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000368}}
+a:hover, a:active {
+  text-decoration: underline;
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/_core\/reset\/_setting\.scss}line{font-family:\00003141}}
+em {
+  font-style: normal;
+}
+
+/*----------------------------------------
+ 3-1. clearfixクラスを出力
+----------------------------------------*/
+/*----------------------------------------
+ 3-2. margin／padding スペースクラスを出力
+----------------------------------------*/
+/*----------------------------------------
+ 3-3. サイト制作支援用 シングルプロパティを出力
+----------------------------------------*/
+/* 共通サンプル */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000348}}
+.contentsArea {
+  background: url('../img/bg_anniversary1.jpg?1572244808') no-repeat center top, url('../img/bg_anniversary2.jpg?1572227037') no-repeat center 801px, url('../img/bg_anniversary3.jpg?1572227148') no-repeat center 1627px, url('../img/bg_anniversary4.jpg?1572227228') no-repeat center 2520px, url('../img/bg_anniversary5.jpg?1572227276') no-repeat center 3431px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000355}}
+.contentsArea .font-none {
+  font-size: 0;
+  color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000360}}
+.contentsArea .anniversary {
+  width: 960px;
+  position: relative;
+  min-width: 960px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000366}}
+.contentsArea .anniversary .anniversary_title {
+  position: relative;
+  height: 816px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000371}}
+.contentsArea .anniversary .anniversary_title .title_img {
+  width: 863px;
+  height: 428px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000380}}
+.contentsArea .anniversary .anniversary_title .a_19th {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 6px;
+  width: 99px;
+  height: 131px;
+  background: url('../img/a_19th.png?1572229923') no-repeat center top;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\0000391}}
+.contentsArea .anniversary .anniversary_title .text-handbills {
+  position: absolute;
+  display: block;
+  top: 40px;
+  left: 153px;
+  width: 647px;
+  height: 23px;
+  background: url('../img/text-handbills.png?1572229923') no-repeat center top;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003102}}
+.contentsArea .anniversary .anniversary_title .text-event {
+  position: absolute;
+  display: block;
+  bottom: 242px;
+  left: 250px;
+  width: 458px;
+  height: 107px;
+  background: url('../img/text-event.png?1572229924') no-repeat center top;
+  z-index: 3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003113}}
+.contentsArea .anniversary .anniversary_title .btn-join-off {
+  position: absolute;
+  width: 414px;
+  height: 121px;
+  bottom: 107px;
+  left: 272px;
+  background-color: transparent;
+  display: block;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 414px;
+  height: 121px;
+  background-position: 0 -242px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003123}}
+.contentsArea .anniversary .anniversary_title .btn-join-off:hover {
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 414px;
+  height: 121px;
+  background-position: 0 -363px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003128}}
+.contentsArea .anniversary .anniversary_title .btn-join-ing {
+  position: absolute;
+  width: 414px;
+  height: 121px;
+  bottom: 107px;
+  left: 272px;
+  display: block;
+  background-color: transparent;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 414px;
+  height: 121px;
+  background-position: 0 -121px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003139}}
+.contentsArea .anniversary .anniversary_title .btn-join-end {
+  position: absolute;
+  width: 414px;
+  height: 121px;
+  bottom: 107px;
+  left: 272px;
+  display: block;
+  background-color: transparent;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 414px;
+  height: 121px;
+  background-position: 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003150}}
+.contentsArea .anniversary .anniversary_title .text-received {
+  position: absolute;
+  display: block;
+  bottom: 30px;
+  left: 190px;
+  width: 591px;
+  height: 43px;
+  background: url('../img/text-received.png?1572229924') no-repeat center top;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003162}}
+.contentsArea .anniversary .bg_prize {
+  position: relative;
+  width: 969px;
+  height: 1470px;
+  padding-top: 70px;
+  background: url('../img/bg_prize.png?1572239429') no-repeat center top;
+  z-index: 3;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003171}}
+.contentsArea .anniversary .bg_prize .event_one {
+  margin: 0 auto;
+  width: 407px;
+  height: 106px;
+  background: url('../img/hankyu_gift1.png?1572568926') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003178}}
+.contentsArea .anniversary .bg_prize .text-hancon {
+  margin: 30px auto 0px;
+  width: 541px;
+  height: 42px;
+  background: url('../img/text-hancon.png?1572311317') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003185}}
+.contentsArea .anniversary .bg_prize .stage_mission {
+  height: 714px;
+  width: 900px;
+  margin-bottom: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003190}}
+.contentsArea .anniversary .bg_prize .stage_mission .stage_title {
+  display: inline-block;
+  position: relative;
+  width: 310px;
+  height: 693px;
+  left: 0px;
+  top: 26px;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003199}}
+.contentsArea .anniversary .bg_prize .stage_mission .stage_title li {
+  position: relative;
+  width: 309px;
+  height: 148px;
+  margin: 10px 0px 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003206}}
+.contentsArea .anniversary .bg_prize .stage_mission .stage_title a {
+  position: relative;
+  display: block;
+  width: 309px;
+  height: 148px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003213}}
+.contentsArea .anniversary .bg_prize .stage_mission .stage_title li:nth-child(1) {
+  margin: 36px 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003217}}
+.contentsArea .anniversary .bg_prize .stage_mission .stage_title li:nth-child(3) {
+  margin: 7px 0px 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003222}}
+.contentsArea .anniversary .bg_prize .stage_mission .one_stage {
+  display: inline-block;
+  position: relative;
+  width: 290px;
+  height: 693px;
+  left: 0px;
+  top: 26px;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003232}}
+.contentsArea .anniversary .bg_prize .stage_mission .panzi::before {
+  content: '';
+  position: absolute;
+  width: 203px;
+  height: 134px;
+  top: 25px;
+  left: 35px;
+  background: url('../img/panzi.png?1572330628') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003242}}
+.contentsArea .anniversary .bg_prize .stage_mission li {
+  position: relative;
+  width: 268px;
+  height: 158px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003248}}
+.contentsArea .anniversary .bg_prize .stage_mission li .stage_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  width: 268px;
+  padding: 28px 40px 20px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003261}}
+.contentsArea .anniversary .bg_prize .stage_mission li .stage_num {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  height: 32px;
+  width: 268px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003272}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(1) {
+  margin: 32px 10px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003275}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(1) .stage_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  width: 268px;
+  padding: 40px 40px 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003288}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(1) .stage_num {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  height: 32px;
+  width: 268px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003298}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(2) {
+  position: relative;
+  width: 268px;
+  height: 158px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003304}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(2) .stage_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  width: 268px;
+  padding: 28px 40px 20px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003317}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(2) .stage_num {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  height: 32px;
+  width: 268px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003327}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(3) {
+  position: relative;
+  width: 268px;
+  height: 158px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003333}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(3) .stage_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  width: 268px;
+  padding: 33px 40px 16px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003346}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(3) .stage_num {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  height: 32px;
+  width: 268px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003356}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(4) {
+  position: relative;
+  width: 268px;
+  height: 158px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003362}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(4) .stage_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  width: 268px;
+  padding: 32px 40px 17px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003375}}
+.contentsArea .anniversary .bg_prize .stage_mission li:nth-child(4) .stage_num {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  height: 32px;
+  width: 268px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003387}}
+.contentsArea .anniversary .bg_prize .stage_mission .two_stage {
+  display: inline-block;
+  position: relative;
+  width: 290px;
+  height: 693px;
+  left: 0px;
+  top: 26px;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003397}}
+.contentsArea .anniversary .bg_prize .stage_mission .two_stage li .stage_text {
+  color: #fffeb3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003404}}
+.contentsArea .anniversary .bg_prize .count {
+  font-size: 12px;
+  color: #000;
+  margin-top: 35px;
+  margin-left: 310px;
+  text-align: center;
+  width: 580px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003413}}
+.contentsArea .anniversary .bg_prize .clear {
+  padding-top: 130px;
+  padding-left: 90px;
+  padding-right: 128px;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003419}}
+.contentsArea .anniversary .bg_prize .clear .title_clear {
+  text-align: center;
+  width: 362px;
+  display: inline-block;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003425}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .text-avatar {
+  width: 347px;
+  height: 27px;
+  margin: 0 auto;
+  background: url('../img/text-avatar.png?1572327623') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003432}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .img-remuneration1 {
+  width: 116px;
+  height: 136px;
+  margin: 46px auto 0;
+  background: url('../img/img-remuneration1.png?1572241063') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003438}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .img-remuneration1 img {
+  width: 110px;
+  height: 130px;
+  margin: 3px 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003445}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .recive_off {
+  margin: 31px auto 0;
+  width: 104px;
+  height: 26px;
+  display: block;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 104px;
+  height: 26px;
+  background-position: 0 -776px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003452}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .recive_off:hover {
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 104px;
+  height: 26px;
+  background-position: 0 -802px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003457}}
+.contentsArea .anniversary .bg_prize .clear .title_clear .recive_grey {
+  margin: 31px auto 0;
+  width: 104px;
+  height: 26px;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 104px;
+  height: 26px;
+  background-position: 0 -750px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003465}}
+.contentsArea .anniversary .bg_prize .clear .all_clear {
+  width: 382px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003471}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .text-apply {
+  width: 197px;
+  height: 27px;
+  margin: 0 auto;
+  background: url('../img/text-apply.png?1572327623') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003478}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize {
+  height: 212px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003482}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize .prize_left {
+  width: 91px;
+  height: 105px;
+  background: url('../img/predecessors.png?1572335487') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003488}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize .three_card {
+  position: absolute;
+  width: 164px;
+  height: 143px;
+  top: 32px;
+  left: 19px;
+  background: url('../img/img-remuneration2.png?1572336333') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003497}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize .prize_right {
+  width: 85px;
+  height: 110px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003505}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize .lottery {
+  background: url('../img/lottery.png?1572331249') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003509}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .two_prize .one_card {
+  position: absolute;
+  width: 104px;
+  height: 57px;
+  top: 82px;
+  right: 41px;
+  background: url('../img/img-remuneration3.png?1572336333') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003519}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .prize_introduction {
+  width: 280px;
+  height: 61px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+  line-height: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003528}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .btn_apply {
+  margin: 21px auto;
+  width: 170px;
+  height: 48px;
+  display: block;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 170px;
+  height: 48px;
+  background-position: 0 -654px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003535}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .btn_apply:hover {
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 170px;
+  height: 48px;
+  background-position: 0 -702px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003540}}
+.contentsArea .anniversary .bg_prize .clear .all_clear .btn_apply_grey {
+  margin: 0px auto;
+  width: 170px;
+  height: 48px;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 170px;
+  height: 48px;
+  background-position: 0 -606px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003550}}
+.contentsArea .anniversary .gift_content {
+  margin-top: 74px;
+  width: 100%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003555}}
+.contentsArea .anniversary .gift_content .hankyu_gift {
+  width: 676px;
+  height: 115px;
+  margin: 0 auto;
+  background: url('../img/hankyu_gift.png?1572339675') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003562}}
+.contentsArea .anniversary .gift_content .text_during_event {
+  width: 495px;
+  height: 49px;
+  margin: 38px auto 0px;
+  background: url('../img/text_during_event.png?1572339675') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003569}}
+.contentsArea .anniversary .gift_content .event_subject {
+  font-size: 16px;
+  color: #6b3907;
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003577}}
+.contentsArea .anniversary .gift_content .event_title {
+  width: 808px;
+  height: 174px;
+  margin: 33px auto 0px;
+  background: url('../img/event_title.png?1572339675') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003584}}
+.contentsArea .anniversary .gift_content .yen_3000 {
+  width: 521px;
+  height: 83px;
+  margin: 68px auto 0px;
+  position: relative;
+  background: url('../img/yen_3000.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003592}}
+.contentsArea .anniversary .gift_content .yen_3000::before {
+  position: absolute;
+  content: '';
+  width: 123px;
+  height: 123px;
+  top: -23px;
+  left: -156px;
+  background: url('../img/privilege1.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003602}}
+.contentsArea .anniversary .gift_content .yen_3000::after {
+  position: absolute;
+  content: '';
+  width: 179px;
+  height: 168px;
+  top: -41px;
+  right: -186px;
+  background: url('../img/cash_coupon3.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003612}}
+.contentsArea .anniversary .gift_content .check_passbooks {
+  background-color: transparent;
+  width: 414px;
+  height: 121px;
+  margin: 45px auto 0px;
+  display: block;
+  background-color: transparent;
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 230px;
+  height: 61px;
+  background-position: 0 -484px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003621}}
+.contentsArea .anniversary .gift_content .check_passbooks:hover {
+  background-image: url('../img/spr-se50d11bb91.png');
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  width: 230px;
+  height: 61px;
+  background-position: 0 -545px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003626}}
+.contentsArea .anniversary .gift_content .double_chance {
+  width: 498px;
+  height: 84px;
+  margin: 88px auto 0px;
+  position: relative;
+  background: url('../img/double_chance.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003634}}
+.contentsArea .anniversary .gift_content .double_chance::before {
+  position: absolute;
+  content: '';
+  width: 123px;
+  height: 123px;
+  top: -13px;
+  left: -156px;
+  background: url('../img/privilege2.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003644}}
+.contentsArea .anniversary .gift_content .double_chance::after {
+  position: absolute;
+  content: '';
+  width: 212px;
+  height: 207px;
+  top: -62px;
+  right: -230px;
+  background: url('../img/cash_coupon1.png?1572339676') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003654}}
+.contentsArea .anniversary .gift_content .among_customers {
+  width: 779px;
+  height: 63px;
+  margin: 39px auto 0px;
+  background: url('../img/among_customers.png?1572339884') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003662}}
+.contentsArea .anniversary .footer_text {
+  margin-top: 254px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 21px;
+  padding-bottom: 94px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003669}}
+.contentsArea .anniversary .footer_text li {
+  text-indent: -12px;
+  padding-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003674}}
+.contentsArea .anniversary .footer_text .event2 {
+  margin-top: 42px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003680}}
+.contentsArea .menu_content {
+  position: fixed;
+  width: 180px;
+  height: 513px;
+  z-index: 1000;
+  right: 30px;
+  top: 190px;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003689}}
+.contentsArea .menu_content li {
+  z-index: 1000;
+  opacity: 1;
+  margin: 0px auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003694}}
+.contentsArea .menu_content li a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003699}}
+.contentsArea .menu_content .menu_one {
+  background: url('../img/btn_menu_1.png?1572483403') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003702}}
+.contentsArea .menu_content .menu_one a {
+  width: 177px;
+  height: 166px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003708}}
+.contentsArea .menu_content .menu_two {
+  background: url('../img/btn_menu_2.png?1572483407') no-repeat center top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003711}}
+.contentsArea .menu_content .menu_two a {
+  width: 209px;
+  border-radius: 40%;
+  height: 182px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003718}}
+.contentsArea .menu_content .menu_top {
+  background: url('../img/btn_top.png?1572483410') no-repeat center top;
+  margin: 32px auto 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/svn-dev\/ncp\/19th-anniversary\/sass\/main\.v01\.scss}line{font-family:\00003722}}
+.contentsArea .menu_content .menu_top a {
+  width: 144px;
+  height: 146px;
+}
+
+/* 以下は必要に応じて
+header, footer, section, h1, h2, h3, h4, h5, h6, div, p, th, td, dl, dt, dd, ul, ol, li, a, span {
+  box-sizing: border-box;
+}
+
+a:focus, *:focus { outline:none; }
+*/
